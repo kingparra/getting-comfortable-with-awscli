@@ -1,0 +1,29 @@
+# Configure editor settings to match bash style guide
+# http://editorconfig.org
+
+[*]
+indent_style = tab
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+
+
+[.git*]
+indent_size= tab
+indent_style = tab
+
+[{scripts/**.bash,examples/**.bash}]
+indent_size = tab
+indent_style = tab
+shell_variant = bash
+binary_next_line = true
+switch_case_indent = true
+space_redirects = true
+keep_padding = false
+
+
+[tests/**.bats]
+indent_size = tab
+indent_style = tab
+shell_variant = bats
